@@ -1,0 +1,17 @@
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.50);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1.75);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,123 @@
+@import "./utilidades/reset";
+@import "./utilidades/variables";
+@import "./utilidades/mixins";
+@import "./utilidades/animaciones";
+@import "./estructura/header";
+
+
+// Main container styles
+.Historia-container {
+    background-color: #FFFFFF;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.plantelprincipal {
+    margin-top: 150px;
+}
+
+// Define a map for contenedor styles
+$contenedor-styles: (
+    background-color: #FAB630,
+    width: 350px,
+    height: 180px,
+    color: black,
+    border: 2px solid red,
+    margin-top: 50px,
+    margin-bottom: 50px,
+    display: inline-block,
+);
+
+// Contenedor
+.contenedores {
+    @each $key, $value in $contenedor-styles {
+        #{$key}: $value;
+    }
+}
+
+// Specific styles
+.yale {
+    width: 100px !important;
+    height: 90px;
+    margin-left: 60px;
+}
+
+.marne {
+    width: 100px !important;
+    height: 90px;
+}
+
+// Slide styles
+.slide {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 500px;
+    margin-top: 200px;
+}
+
+// Other styles
+.himno {
+    margin-top: 80px;
+}
+
+.actividades {
+    li {
+        margin-top: 10px;
+        margin-right: 40px;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #FAB630;
+        color: white;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.subtitulo {
+    margin-top: 100px;
+   }
+
+.registro {
+    margin-bottom: 180px;
+}
+
+.contacto {
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+// Footer styles
+.pie-pagina {
+    background-color: #EF4135;
+    color: white;
+    width: 100vw;
+    height: 120px;
+    text-align: center;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    li {
+        display: inline-block;
+    }
+}
+
+.icons {
+    align-items: center;
+    justify-content: center;
+    padding-top: 18px;
+    color: white;
+}
+
+// Media queries
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}

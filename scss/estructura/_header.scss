@@ -1,0 +1,24 @@
+header {
+    nav {    
+        background-color: map-get($navbar-colors, azul-francia);
+        .navbar-collapse {
+            align-items: center;
+            justify-content: space-between;
+            #logo {
+                animation-name: latido;
+                animation-duration: 4s;
+            }
+            .nav-link {
+                @include nav-link-style(red);
+            }
+        }
+    }
+
+    
+    
+    .Titulo {
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+}

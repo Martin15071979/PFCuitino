@@ -1,0 +1,13 @@
+@mixin navbar-style($bg-color) {
+    background-color: $bg-color;
+}
+
+
+@mixin nav-link-style($bg-color) {
+    background-color: $bg-color !important;
+    color: white !important;
+    margin: 2px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+}
