@@ -1,3 +1,6 @@
-.SociosBg{
-    align-content: end;
+$ruta: "../../images/";
+
+
+.socios-bg{
+    background-image: url(#{$ruta} + "fondodepantallagris-rojo.jpg");
 }

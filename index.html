@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
                     aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,7 +108,7 @@
             <div class="row">
 
                 <div class="col-12 col-lg-4">
-                    <div class="contenedores p-4">
+                    <div class="contenedores p-4 rounded-3" >
                         <h4>Fecha anterior</h4>
                         <div class="row">
                             <img class="yale" src="images/yale.jpeg" alt="yale">
@@ -119,7 +119,7 @@
                 </div>
 
                 <div class="col-12 col-lg-4">
-                    <div class="contenedores p-4">
+                    <div class="contenedores p-4 rounded-3">
                         <h4>El Próximo Partido</h4>
                         <h5>Fecha y hora a confirmar</h5>
                         <h5>Estadio: Club Atletico Marne</h5>
@@ -128,9 +128,25 @@
                 </div>
 
                 <div class="col-12 col-lg-4">
-                    <div class="contenedores p-5">
+                    <div class="contenedores p-4 rounded-3">
                         <h4>Entradas</h4>
-                        <button type="button" class="comprar btn btn-primary">Comprar</button>
+                        <button type="button" class="comprar btn btn-primary" data-bs-toggle="modal" data-bs-target="#entradas-modal">Comprar</button>
+                        <div class="modal fade" id="entradas-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Entradas agotadas</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Llenamos la cancha, la próxima apurate a conseguir tu entrada
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
                         <h5><a href="https://tickantel.com.uy/inicio/">O ingresar a tickantel aqui</a></h5>
                     </div>
                 </div>
@@ -138,8 +154,73 @@
         </section>
 
     </main>
-    <aside>
-    </aside>
+    <section class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../PoryectoFinal/images/Plantel/Alvaro.jpg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Facundo.jpg" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Federico.jpg" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Jonathan.jpg" class="d-block w-100" alt="...">
+                 </div>
+                
+                 <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/leandro.jpg" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Matias.jpg" class="d-block w-100" alt="...">
+                </div
+                
+                div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Gonzalo.jpg" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Santiago R..jpg" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Thiago.jpg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Tiros de campo.jpg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Carta de tiro.jpg" class="d-block w-100" alt="...">
+                   </div>
+
+                <div class="carousel-item">
+                    <img src="../PoryectoFinal/images/Plantel/Estadisticas.jpg" class="d-block w-100" alt="...">
+                   </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </section>
     <footer class="container-fluid d-flex p-0">
 
         <div class="col-12 col-lg-12">

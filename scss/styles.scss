@@ -3,6 +3,11 @@
 @import "./utilidades/mixins";
 @import "./utilidades/animaciones";
 @import "./estructura/header";
+@import "./pages/pages";
+@import "./estructura/main";
+@import "./componentes/carrusel";
+@import "./componentes/tarjetas";
+
 
 
 // Main container styles
@@ -64,7 +69,7 @@ $contenedor-styles: (
     li {
         margin-top: 10px;
         margin-right: 40px;
-        font-size: 35px;
+        font-size: 20px;
         font-weight: bold;
         text-align: center;
         background-color: #FAB630;
@@ -121,3 +126,4 @@ footer ul {
         display: none;
     }
 }
+
