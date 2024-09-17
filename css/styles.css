@@ -45,7 +45,18 @@ header .Titulo {
 }
 
 .socios-bg {
-  background-image: url(../../images/fondodepantallagris-rojo.jpg);
+  background-image: url(../images/fondodepantallagris-rojo.jpg);
+  background-size: cover;
+}
+
+.FondoContacto {
+  background-image: url(../images/fondodepantallagris.jpg);
+  background-size: cover;
+}
+
+.fondo404 {
+  background-image: url(../images/block404.jpg);
+  background-size: cover;
 }
 
 main {
@@ -89,6 +100,16 @@ main {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+.productos .card1 {
+  overflow: hidden;
+}
+.productos .card1 img {
+  transition: 1s;
+}
+.productos .card1 img:hover {
+  transform: scale(1.1);
 }
 
 .Historia-container {

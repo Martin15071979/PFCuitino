@@ -1,0 +1,11 @@
+.productos {
+    .card1 {
+        overflow: hidden;
+        img {
+            transition: 1s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
